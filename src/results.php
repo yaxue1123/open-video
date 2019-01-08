@@ -12,8 +12,8 @@ $username = $_SESSION['valid_user'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Video</title>
-    <link rel="Shortcut Icon" href="logo.jpg">
-    <link rel='stylesheet' href='style.css'>
+    <link rel="Shortcut Icon" href="image/logo.jpg">
+    <link rel='stylesheet' href='stylesheet/style.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oxygen|Poiret%20One|Roboto|Jua'>
@@ -22,8 +22,8 @@ $username = $_SESSION['valid_user'];
         $(document).ready(function () {
 
             $("#inputVal").keyup(function () {
-                // when typing in the search-box character by character
-                // send characters typed so far through GET parameter to keyword-suggestions.php
+                // when typing in the search-box character by character.
+                // send characters typed so far through GET parameter to keyword-suggestions.php.
                 $.get("keyword-suggestions.php?input=" + $("#inputVal").val(),
                     function (data, status) {
                         // display query suggestion results to #l2 div

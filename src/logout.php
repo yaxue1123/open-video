@@ -9,14 +9,14 @@ session_destroy();
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="Shortcut Icon" href="logo.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="Shortcut Icon" href="image/logo.jpg">
+    <link rel="stylesheet" href="stylesheet/style.css">
     <title>Logout</title>
 </head>
 <body>
 <div class="home">
     <div class="logout">
-        <img class="rounded-circle" src="logo.jpg" alt="OV Logo">
+        <img class="rounded-circle" src="image/logo.jpg" alt="OV Logo">
         <h1>Logout</h1>
         <?php
         if (!empty($current_user)) {

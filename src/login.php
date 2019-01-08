@@ -8,15 +8,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Video</title>
-    <link rel="Shortcut Icon" href="logo.jpg">
-    <link rel='stylesheet' href='style.css'>
+    <link rel="Shortcut Icon" href="image/logo.jpg">
+    <link rel='stylesheet' href='stylesheet/style.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="home">
     <form method="post" action="login.php" class="form-signin">
-        <img class="rounded-circle" src="logo.jpg" alt="OV Logo">
+        <img class="rounded-circle" src="image/logo.jpg" alt="OV Logo">
         <h1>Please sign in</h1>
         <input type="text" name="uname" placeholder="username">
         <input type="password" name="upass" placeholder="password">
