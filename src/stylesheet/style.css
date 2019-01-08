@@ -1,0 +1,276 @@
+/*3-column flex layout*/
+html, body {
+    height: 100%;
+}
+
+.background-caption h1 {
+    font-size: 4em;
+    font-family: 'Jua';
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+.container {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    padding: 2% 5%;
+}
+
+#left, #middle, #right {
+    max-width: 100%;
+    min-height: 20em;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    padding: 1em;
+    background-color: #e8edf3;
+    height: auto;
+    overflow: hidden;
+}
+
+.right-sticky {
+    top: 20%;
+    position: fixed;
+    right: 5%;
+    overflow-x: auto;
+}
+
+* {
+    font-family: Verdana, sans-serif;
+}
+
+.search-area {
+    margin: 1em auto;
+}
+
+section, aside {
+    padding: 1.5em;
+}
+
+table, td, th {
+    text-align: left;
+    font-family: Roboto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: .5em;
+}
+
+p {
+    font-family: Roboto;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #22264b;
+}
+
+#navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto';
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #b56969;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .container {
+    padding-top: 60px;
+}
+
+.head-img {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.bground {
+    background-image: url(bg.jpg);
+    height: 310px;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: -0.2em;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.background-caption {
+    color: white;
+    text-align: left;
+    width: 65%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left: 5%;
+}
+
+.background-caption h2 {
+    font-size: 1.5em;
+    font-family: 'Jua';
+}
+
+footer {
+    background-color: #22264b;
+    padding: 3em;
+    text-align: center;
+    color: #fff;
+}
+
+img {
+    border-radius: .2em;
+}
+
+.sg {
+    border-radius: 1.25em;
+    margin-bottom: 0.3125em;
+    background-color: #dbc3d0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    font-size: 1em;
+}
+
+.form-signin {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    vertical-align: center;
+    justify-content: space-evenly;
+}
+
+.suggestion-area {
+    padding-left: .5em;
+}
+
+input {
+    width: 50%;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+}
+
+button {
+    transition-duration: 0.4s;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border: 1px solid transparent;
+    font-size: 1rem;
+}
+
+#bt:hover {
+    background-color: #0062cc;
+}
+
+.home {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-signin input {
+    width: 13em;
+}
+
+.form-signin button {
+    margin: 1.5em auto;
+    display: block;
+    width: 10em;
+}
+
+.form-signin button:hover {
+    background-color: #0062cc;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+    display: table-cell;
+    vertical-align: middle;
+    border-style: none;
+    margin: 0 auto;
+}
+
+.warning {
+    color: red;
+    font-size: .8em;
+}
+
+@media (min-width: 60em) {
+
+    #left {
+        width: 20%;
+        order: 1;
+    }
+
+    #right {
+        width: 20%;
+        order: 3;
+    }
+
+    #middle {
+        width: 46%;
+        order: 2;
+        margin: 0 2%;
+    }
+
+}
+
