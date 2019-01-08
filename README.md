@@ -25,7 +25,7 @@ AJAX, JQuery, PHP, MySQL, HTML5, CSS3, Bootstrap.
 ```
   $("#inputVal").keyup(function () {
                 // when typing in the search-box character by character.
-                // send characters typed so far through GET parameter to              keyword-suggestions.php.
+                // send characters typed so far through GET parameter to php.
                 $.get("keyword-suggestions.php?input=" + $("#inputVal").val(),
                     function (data, status) {
                         // display query suggestion results to #l2 div
@@ -35,8 +35,8 @@ AJAX, JQuery, PHP, MySQL, HTML5, CSS3, Bootstrap.
             
   // sanitize user input by addslashes to prevent MySQL injection
   // only select maximum of 10 suggested words using LIKE
-  $query_search = "SELECT * FROM p2suggestion WHERE word LIKE '" . addslashes($_GET['input']) . "%' LIMIT 10";
-  
+  $query_search = "SELECT * FROM p2suggestion WHERE word LIKE '" 
+                    . addslashes($_GET['input']) . "%' LIMIT 10";
   if ($result = $mysqli->query($query_search)) {
       while ($row = $result->fetch_assoc()) {
           // display each record of word with style
